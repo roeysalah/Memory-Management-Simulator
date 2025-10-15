@@ -1,5 +1,6 @@
-🧠 Memory Management Simulator
+🧠 # Memory Management Simulator
 
+## Overview
 This repository contains a simulation of a **multi-process memory management system**.  
 It models how processes request memory, handle page faults, evictions, and disk I/O operations in a simplified, controlled environment.
 
