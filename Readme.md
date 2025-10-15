@@ -1,14 +1,13 @@
-🧠 # Memory Management Simulator
+# 🧠 Memory Management Simulator
 
-## Overview
 This repository contains a simulation of a **multi-process memory management system**.  
 It models how processes request memory, handle page faults, evictions, and disk I/O operations in a simplified, controlled environment.
 
 ---
 
-📚 Modules & Components
+## 📚 Modules & Components
 
-🧩 Processes (CPU)
+### 🧩 Processes (CPU)
 
 - Two simulated processes run concurrently in loops.  
 - In each iteration, a process:
@@ -22,7 +21,7 @@ It models how processes request memory, handle page faults, evictions, and disk 
 
 ---
 
-💾 Memory Management Unit (MMU)
+### 💾 Memory Management Unit (MMU)
 
 - Maintains an array of **N** pages (slots), each marked as “valid” or “invalid”.
 - Runs three internal threads:
@@ -32,7 +31,7 @@ It models how processes request memory, handle page faults, evictions, and disk 
 
 ---
 
-💽 Hard Disk (HD)
+### 💽 Hard Disk (HD)
 
 - Handles read/write requests from the MMU.
 - Each disk operation takes a fixed duration (e.g. `HD_ACCS_T`).
@@ -40,7 +39,7 @@ It models how processes request memory, handle page faults, evictions, and disk 
 
 ---
 
-⏳ Simulation Lifecycle & Termination
+## ⏳ Simulation Lifecycle & Termination
 
 - The simulation runs for a specified duration (`SIM_TIME`).
 - On success, it prints:  
@@ -54,7 +53,7 @@ It models how processes request memory, handle page faults, evictions, and disk 
 
 ---
 
-✅ Correctness & Robustness
+## ✅ Correctness & Robustness
 
 - All system calls (`fork`, `pthread_create`, `msgsnd`, etc.) include **error checking**.  
 - Synchronization primitives (mutexes, condition variables) are **properly initialized and destroyed**.  
@@ -63,7 +62,7 @@ It models how processes request memory, handle page faults, evictions, and disk 
 
 ---
 
-🛠 How to Build & Run
+## 🛠 How to Build & Run
 
 1. **Clone the repository**
    ```bash
@@ -93,4 +92,3 @@ It models how processes request memory, handle page faults, evictions, and disk 
    - etc.
 
 ---
-
